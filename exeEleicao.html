@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aula de Lógica de Programação - Senac Marília">
+    <meta name="keywords" content="html, css, aula, senac">
+    <title>Atividade 1</title>
+</head>
+
+<body>
+    <script>
+
+        let A, B, C, Branco, Nulos, TotalEleitores, validos
+        let percTotal, PercValido, PercNulo, PercBranco
+        A = parseFloat(prompt("Quantidade de votos de A: "));
+        B = parseFloat(prompt("Quantidade de votos de B: "));
+        C = parseFloat(prompt("Quantidade de votos de C: "));
+
+        Nulos = parseInt(prompt("Quantidade de votos nulos: "))
+
+        Branco = parseInt(prompt("Quantidade de votos em Branco: "))
+
+        validos = A + B + C
+        TotalEleitores = validos + Nulos + Branco
+
+        PercValido = (validos * 100) / TotalEleitores
+        PercNulo = (Nulos * 100) / TotalEleitores
+        PercBranco = (Branco * 100) / TotalEleitores
+        document.write("Valor A: ", ((A * 100) / TotalEleitores).toFixed(2), "%<br>")
+        document.write("Valor B: ", ((B * 100) / TotalEleitores).toFixed(2), "% <br>")
+        document.write("Valor C: ", ((C * 100) / TotalEleitores).toFixed(2), "% <br>")
+        document.write("Valor Nulo: ", PercNulo.toFixed(2), "% <br>")
+        document.write("Valor Branco: ", PercBranco.toFixed(2), "% <br>")
+        document.write("Valor Valido: ", PercValido.toFixed(2), "% <br>")
+
+
+    </script>
+</body>
+
+</html>
